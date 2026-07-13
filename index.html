@@ -1,138 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dua Malik | Portfolio</title>
+    <title>Dua Malik | Software Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
-    <!-- Header / Nav -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-indigo-600 tracking-wide">DUA MALIK</h1>
-            <nav class="space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                <a href="#education" class="hover:text-indigo-600 transition">Education</a>
-                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
-                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+    <!-- Premium Navbar -->
+    <header class="bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-black tracking-wider bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">DUA MALIK</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#about" class="text-slate-400 hover:text-violet-400 transition-colors">About</a>
+                <a href="#education" class="text-slate-400 hover:text-violet-400 transition-colors">Education</a>
+                <a href="#projects" class="text-slate-400 hover:text-violet-400 transition-colors">Projects</a>
+                <a href="#skills" class="text-slate-400 hover:text-violet-400 transition-colors">Skills</a>
+                <a href="#achievements" class="text-slate-400 hover:text-violet-400 transition-colors">Achievements</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="about" class="max-w-5xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-3 gap-8 items-center">
-        <div class="md:col-span-2 space-y-4">
-            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full uppercase">Software Engineer</span>
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Hi, I'm Dua Malik</h2>
-            <p class="text-lg text-gray-600 leading-relaxed">
+    <!-- Hero / About Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-2 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-1.5 text-xs font-semibold text-violet-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Software Engineering Student
+            </div>
+            <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                Hi, I am <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Dua Malik</span>
+            </h2>
+            <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
                 Motivated Software Engineering student at Fatima Jinnah Women University with hands-on experience in desktop application development, relational databases, and software modeling. Seeking a challenging internship or entry-level role to leverage technical expertise.[cite: 1]
             </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-                <a href="mailto:612duamlik@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-5 py-2.5 rounded-lg shadow transition flex items-center gap-2">
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="mailto:612duamlik@gmail.com?subject=Inquiry from Portfolio" class="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-indigo-950 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
                     <i class="fas fa-envelope"></i> Contact Me
                 </a>
-                <a href="https://linkedin.com/in/dua-malik-942a462b1" target="_blank" class="border border-gray-300 hover:bg-gray-100 font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2">
+                <a href="https://linkedin.com/in/dua-malik-942a462b1" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-semibold px-6 py-3 rounded-xl transition-all flex items-center gap-2">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </div>
         </div>
         <div class="flex justify-center">
-            <!-- Professional Placeholder Icon for Avatar -->
-            <div class="w-48 h-48 md:w-64 md:h-64 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 shadow-inner">
-                <i class="fas fa-user-astronaut text-7xl"></i>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-full blur opacity-40 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative w-48 h-48 md:w-64 md:h-64 bg-slate-900 rounded-full border border-slate-800 flex items-center justify-center text-violet-400">
+                    <i class="fas fa-user-astronaut text-7xl animate-bounce" style="animation-duration: 3s;"></i>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="bg-white py-16 border-t border-b border-gray-100">
-        <div class="max-w-5xl mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-8 text-gray-900 flex items-center gap-2">
-                <i class="fas fa-graduation-cap text-indigo-600"></i> Education
-            </h3>
-            <div class="space-y-8 border-l-2 border-indigo-100 pl-6 ml-2">
+    <section id="education" class="bg-slate-900/40 border-t border-b border-slate-900 py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold tracking-tight text-white">Education Timeline</h3>
+                <p class="text-sm text-slate-500 mt-2">Academic background and qualifications</p>
+            </div>
+            <div class="space-y-12 border-l-2 border-slate-800 pl-8 ml-4">
+                <!-- University -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1 bg-indigo-600 w-3 h-3 rounded-full"></div>
-                    <span class="text-sm font-semibold text-indigo-600">2024 - 2028 (Continuing)</span>
-                    <h4 class="text-lg font-bold text-gray-800">Bachelor of Science in Software Engineering</h4>
-                    <p class="text-gray-600">Fatima Jinnah Women University, Rawalpindi[cite: 1]</p>
+                    <div class="absolute -left-[41px] top-1.5 bg-gradient-to-r from-violet-500 to-indigo-500 w-4 h-4 rounded-full shadow-lg shadow-indigo-500/50"></div>
+                    <span class="text-xs font-bold text-violet-400 tracking-wider uppercase">2024 - 2028 (Continuing)</span>
+                    <h4 class="text-xl font-bold text-white mt-1">Bachelor of Science in Software Engineering</h4>
+                    <p class="text-slate-400 text-sm mt-0.5">Fatima Jinnah Women University, Rawalpindi[cite: 1]</p>
                 </div>
+                <!-- ICS -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1 bg-gray-300 w-3 h-3 rounded-full"></div>
-                    <span class="text-sm font-semibold text-gray-500">2022 - 2024</span>
-                    <h4 class="text-lg font-bold text-gray-800">Intermediate (ICS) — Marks: 924/1100</h4>
-                    <p class="text-gray-600">FG Degree College for Women, Rawalpindi[cite: 1]</p>
+                    <div class="absolute -left-[41px] top-1.5 bg-slate-800 w-4 h-4 rounded-full border border-slate-700"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">2022 - 2024</span>
+                    <h4 class="text-xl font-bold text-slate-200 mt-1">Intermediate (ICS) <span class="text-emerald-400 font-medium text-sm ml-2">— Marks: 924/1100</span></h4>
+                    <p class="text-slate-400 text-sm mt-0.5">FG Degree College for Women, Rawalpindi[cite: 1]</p>
+                </div>
+                <!-- Matric -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1.5 bg-slate-800 w-4 h-4 rounded-full border border-slate-700"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">2020 - 2022</span>
+                    <h4 class="text-xl font-bold text-slate-200 mt-1">Matriculation (Computer Science) <span class="text-emerald-400 font-medium text-sm ml-2">— Marks: 927/1100</span></h4>
+                    <p class="text-slate-400 text-sm mt-0.5">Government Girls High School, Rawalpindi[cite: 1]</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="max-w-5xl mx-auto px-4 py-16">
-        <h3 class="text-2xl font-bold mb-8 text-gray-900 flex items-center gap-2">
-            <i class="fas fa-code text-indigo-600"></i> Technical Projects
-        </h3>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">C# & SQL Server</span>
-                <h4 class="text-xl font-bold mt-1 mb-2 text-gray-800">Desktop Application Development (WinForms)</h4>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Designed and developed a functional desktop application. Built the UI using C# WinForms and integrated it with SQL Server back-end for complete CRUD operations.[cite: 1]
+    <!-- Technical Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold tracking-tight text-white">Technical Projects</h3>
+            <p class="text-sm text-slate-500 mt-2">Hands-on systems and applications developed</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl hover:border-slate-700 transition duration-300 relative group">
+                <div class="absolute top-6 right-8 text-slate-700 group-hover:text-violet-500 transition-colors">
+                    <i class="fas fa-desktop text-2xl"></i>
+                </div>
+                <span class="text-xs font-bold text-violet-400 tracking-wider uppercase">C# & SQL Server</span>
+                <h4 class="text-2xl font-bold mt-2 mb-3 text-white">Desktop Application Development (WinForms)</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Designed and developed a functional desktop application. Built the front-end user interface using C# WinForms and integrated it with a SQL Server back-end database, implementing complete data connectivity for CRUD operations.[cite: 1]
                 </p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Oracle Database</span>
-                <h4 class="text-xl font-bold mt-1 mb-2 text-gray-800">Database Design & Management</h4>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Hands-on experience in relational database design, schema architecture, and formulating complex SQL statements, constraints, and data definitions.[cite: 1]
+            <!-- Project 2 -->
+            <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl hover:border-slate-700 transition duration-300 relative group">
+                <div class="absolute top-6 right-8 text-slate-700 group-hover:text-cyan-500 transition-colors">
+                    <i class="fas fa-database text-2xl"></i>
+                </div>
+                <span class="text-xs font-bold text-cyan-400 tracking-wider uppercase">Oracle Database</span>
+                <h4 class="text-2xl font-bold mt-2 mb-3 text-white">Database Design & Management</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Gained hands-on experience in relational database design, schema architecture, and advanced querying using Oracle Database. Formulated complex SQL statements, constraints, and data definitions for academic projects.[cite: 1]
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-900 text-white py-16">
-        <div class="max-w-5xl mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-8 flex items-center gap-2 text-indigo-400">
-                <i class="fas fa-tools"></i> Skills & Competencies
-            </h3>
+    <section id="skills" class="bg-slate-900/60 border-t border-b border-slate-900 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold tracking-tight text-white">Skills & Competencies</h3>
+                <p class="text-sm text-slate-500 mt-2">Technical and non-technical areas of expertise</p>
+            </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h4 class="text-indigo-300 font-semibold mb-3 uppercase tracking-wider text-xs">Technical</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> C# (WinForms)[cite: 1]</li>
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> SQL Server & Oracle[cite: 1]</li>
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> Database Connectivity[cite: 1]</li>
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> Linux (Ubuntu) & Bash[cite: 1]</li>
-                    </ul>
+                <!-- Tech Skills -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center text-violet-400 mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-4">Technical Skills</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">C# (WinForms)</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">SQL Server</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Oracle Database</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Database Connectivity</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Linux (Ubuntu)</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">VirtualBox</span>[cite: 1]
+                    </div>
                 </div>
-                <div>
-                    <h4 class="text-indigo-300 font-semibold mb-3 uppercase tracking-wider text-xs">Design & Tools</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> Visual Paradigm (UML)[cite: 1]</li>
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> OO Analysis & Design[cite: 1]</li>
-                        <li><i class="fas fa-check text-indigo-400 mr-2"></i> MS Office Suite[cite: 1]</li>
-                    </ul>
+                <!-- Software Design -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-4">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-4">Software Modeling</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Visual Paradigm</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">UML Modeling</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">OO Analysis & Design</span>[cite: 1]
+                    </div>
                 </div>
+                <!-- Soft Skills -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-4">Soft Skills</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Public Speaking</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Extempore Declamation</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Leadership</span>[cite: 1]
+                        <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-lg">Teamwork</span>[cite: 1]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section id="achievements" class="max-w-5xl mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold tracking-tight text-white">Certifications & Achievements</h3>
+            <p class="text-sm text-slate-500 mt-2">Recognitions and honors achieved</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-4 p-5 bg-slate-900 rounded-xl border border-slate-800">
+                <div class="text-amber-400 text-xl pt-1"><i class="fas fa-trophy"></i></div>
                 <div>
-                    <h4 class="text-indigo-300 font-semibold mb-3 uppercase tracking-wider text-xs">Soft Skills & Awards</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fas fa-star text-yellow-400 mr-2"></i> Public Speaking[cite: 1]</li>
-                        <li><i class="fas fa-star text-yellow-400 mr-2"></i> 1st - All Pakistan Declamation[cite: 1]</li>
-                        <li><i class="fas fa-star text-yellow-400 mr-2"></i> 1st - Software Dev (Zonal)[cite: 1]</li>
-                        <li><i class="fas fa-star text-yellow-400 mr-2"></i> CM Laptop Scheme Winner[cite: 1]</li>
-                    </ul>
+                    <h5 class="text-white font-bold">1st Position</h5>
+                    <p class="text-slate-400 text-sm mt-0.5">All Pakistan Extemporal Declamation Competition[cite: 1]</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-900 rounded-xl border border-slate-800">
+                <div class="text-amber-400 text-xl pt-1"><i class="fas fa-award"></i></div>
+                <div>
+                    <h5 class="text-white font-bold">1st Position - Zonal Level</h5>
+                    <p class="text-slate-400 text-sm mt-0.5">Software Development Competition[cite: 1]</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-900 rounded-xl border border-slate-800">
+                <div class="text-indigo-400 text-xl pt-1"><i class="fas fa-laptop"></i></div>
+                <div>
+                    <h5 class="text-white font-bold">Winner - CM Laptop Scheme</h5>
+                    <p class="text-slate-400 text-sm mt-0.5">Merit-Based Award by Chief Minister[cite: 1]</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-slate-900 rounded-xl border border-slate-800">
+                <div class="text-cyan-400 text-xl pt-1"><i class="fas fa-medal"></i></div>
+                <div>
+                    <h5 class="text-white font-bold">Multiple STEM Awards</h5>
+                    <p class="text-slate-400 text-sm mt-0.5">School Level STEM Competitions[cite: 1]</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 text-center py-8 text-gray-500 text-xs">
-        <p>&copy; 2026 Dua Malik. Built with GitHub Pages.</p>
+    <footer class="bg-slate-950 border-t border-slate-900 text-center py-8 text-slate-600 text-xs">
+        <p>&copy; 2026 Dua Malik. All rights reserved.</p>
     </footer>
 
 </body>
