@@ -15,7 +15,7 @@ const STATS = [
 
 const PROJECTS = [
   { title: "Local Skill Board", tag: "Project 1", img: "skill", color: "#6FE0C5",
-    live: "https://local-skill-board.vercel.app/", post: FELLOWSHIP,
+    live: "https://local-skill-board.vercel.app/", post: "https://lnkd.in/p/dyRsAfxp",
     text: "A peer-to-peer directory where people trade skills. Deployed on Vercel.",
     stack: ["Next.js", "Supabase", "Tailwind CSS"] },
   { title: "SpaceSync", tag: "Project 2 · Coming soon", img: "space", color: "#FF8F7A",
@@ -23,11 +23,11 @@ const PROJECTS = [
     text: "Booking platform for shared resources and spaces, with caching for fast availability checks.",
     stack: ["React", "TypeScript", "Express", "MongoDB", "Redis"] },
   { title: "TruckLink", tag: "Project 3", img: "truck", color: "#C4B8FF",
-    live: "https://trucklink-frontend-vofx.vercel.app/", post: FELLOWSHIP,
+    live: "https://trucklink-frontend-vofx.vercel.app/", post: "https://lnkd.in/p/db4RngyD",
     text: "Role-based portal for hiring and onboarding truck drivers, with JWT auth and route guards.",
     stack: ["Next.js", "NestJS", "MongoDB", "JWT"] },
   { title: "CarpoolCampus", tag: "Project 4", img: "carpool", color: "#6FE0C5",
-    live: "https://carpool-xlo2.vercel.app/", post: FELLOWSHIP,
+    live: "https://carpool-xlo2.vercel.app/", post:"https://lnkd.in/p/dm5uCVvR",
     text: "Ride-sharing for students who commute to campus, with OTP-verified signup.",
     stack: ["React", "Node.js", "Express", "PostgreSQL"] }
 ];
