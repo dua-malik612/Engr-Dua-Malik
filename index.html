@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dua Malik | Software Engineer & Web Developer</title>
+<meta name="description" content="Portfolio of Dua Malik: software engineering student, full-stack web developer and team lead from Rawalpindi, Pakistan.">
+<meta property="og:title" content="Dua Malik | Portfolio">
+<meta property="og:description" content="Four full-stack projects shipped in 10 weeks. React, Next.js, Node, Supabase, PostgreSQL.">
+<link rel="icon" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=JetBrains+Mono:wght@400;600&family=Figtree:wght@400;600&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="prog"></div>
+<header class="nav"><div class="wrap bar">
+  <a class="logo" href="#top">Dua Malik</a>
+  <nav><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#certs">Certificates</a><a href="#contact">Contact</a></nav>
+  <div class="tools"><span class="clock" id="clock"></span><button class="tool" id="cmdBtn" type="button">Search <kbd>Ctrl K</kbd></button><button class="tool" id="langBtn" type="button" lang="ur">اردو</button></div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="wrap hero-grid">
+  <div class="hero-text">
+    <p class="urdu" lang="ur" dir="rtl">دعا ملک</p>
+    <h1 data-ur="میں فُل اسٹیک ویب ایپس بناتی ہوں اور انہیں لائیو کرتی ہوں۔">I build full-stack web apps and ship them.</h1>
+    <p class="lead" data-ur="فاطمہ جناح ویمن یونیورسٹی میں سافٹ ویئر انجینئرنگ کی طالبہ۔ میں React، Next.js اور Node پر کام کرتی ہوں، اور کسی کچّے خیال کو لائیو پروڈکٹ بنانا مجھے پسند ہے۔ میں مقابلوں میں تقریر اور تحریر بھی کرتی ہوں۔">Software engineering student at Fatima Jinnah Women University. I work with React, Next.js and Node, and I like turning a rough idea into something live. I also speak and write competitively.</p>
+    <div class="btns">
+      <a class="btn gold" href="#projects" data-ur="میرے پروجیکٹس دیکھیں">See my projects</a>
+      <a class="btn" href="assets/Dua_Malik_CV.pdf" download data-ur="سی وی ڈاؤن لوڈ کریں">Download CV</a>
+    </div>
+  </div>
+  <div class="editor" aria-label="Summary of Dua as code">
+    <div class="ed-bar"><i></i><i></i><i></i><span>dua.ts</span></div>
+<pre><code><span class="ln" style="--i:0"><span class="c">// who I am, in one object</span></span><span class="ln" style="--i:1"><span class="k">const</span> <span class="v">dua</span> = {</span><span class="ln" style="--i:2">  role: <span class="s">"<span id="role">Software Engineer</span><span class="caret"></span>"</span>,</span><span class="ln" style="--i:3">  stack: [<span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Node"</span>, <span class="s">"PostgreSQL"</span>],</span><span class="ln" style="--i:4">  shipped: <span class="n">4</span>,</span><span class="ln" style="--i:5">  base: <span class="s">"Rawalpindi, PK"</span>,</span><span class="ln" style="--i:6">  openTo: [<span class="s">"internships"</span>, <span class="s">"entry-level roles"</span>],</span><span class="ln" style="--i:7">};</span></code></pre></div>
+</div></section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+<section id="about"><div class="wrap about">
+  <div class="about-text"><h2>About me</h2>
+  <p>Hi, I'm Dua. I'm a Software Engineering student at Fatima Jinnah Women University in Rawalpindi, and a web developer who likes finishing things: the signup flow that actually works, the page that loads fast, the project that is deployed and not just almost done.</p>
+  <p>This summer I completed the Zeppelin Labs Web Development Fellowship and built four full-stack apps with React, Next.js, Node, NestJS, Supabase, PostgreSQL and MongoDB. Before code, there was the stage: I've won titles in Urdu extempore, essay writing and inter-university competitions, which is why I enjoy explaining technical ideas in plain words.</p>
+  <p>I'm open to internships and entry-level software roles. Let's connect.</p>
+  <div class="now"><strong>Right now</strong><span>BS Software Engineering, 5th semester, FJWU</span><span>Sponsorship &amp; Logistics, AICP FJWU Chapter</span></div></div>
+  <div><img class="me" src="assets/images/dua.jpg" alt="Dua Malik" onerror="this.onerror=null;this.src='assets/images/dua-placeholder.svg'"><dl class="stats" id="stats"></dl></div>
+</div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2><p class="sub">Four full-stack apps from the Zeppelin Labs fellowship, then my academic builds. Click a card to read the post on LinkedIn.</p>
+  <div class="grid" id="projectGrid"></div>
+  <h3 class="mini">Academic builds</h3><ul class="plain" id="academic"></ul>
+</div></section>
+
+<section id="journey"><div class="wrap"><h2>Journey</h2><ol class="timeline" id="timeline"></ol></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2><div class="skills" id="skillList"></div></div></section>
+
+<section id="wins"><div class="wrap"><h2>Wins</h2><ul class="wins" id="winList"></ul></div></section>
+
+<section id="certs"><div class="wrap"><h2>Certificates</h2><div class="certs" id="certList"></div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let's build something.</h2>
+  <p class="lead">Open to internships and collaborations. Email is the fastest way to reach me.</p>
+  <div class="btns" id="contactBtns"></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="yr"></span> Dua Malik · Rawalpindi, Pakistan</div></footer>
+<noscript><p style="padding:20px">Please enable JavaScript to see the full portfolio.</p></noscript>
+<div class="pal" id="pal" hidden><div class="pal-box"><input id="palIn" placeholder="Jump to… projects, certificates, contact" autocomplete="off" aria-label="Search"><ul id="palList"></ul></div></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
